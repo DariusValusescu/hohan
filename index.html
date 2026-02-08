@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Centered GIF</title>
     <style>
         body {
-            margin: 100;
-            background: black; /* optional */
+            margin: 0;
+            background: black;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -13,12 +14,15 @@
         }
 
         img {
-            width: 400px;
+            max-width: 80%;   /* scales down to fit horizontally */
+            max-height: 80%;  /* scales down to fit vertically */
+            width: auto;
             height: auto;
         }
     </style>
 </head>
 <body>
-    <img src="gorilla-middle-finger.gif">
+    <img src="gorilla-middle-finger.gif" alt="Centered GIF">
 </body>
 </html>
+
